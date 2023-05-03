@@ -1,5 +1,9 @@
-.hero, .footer  {
+.hero, .footer, .header  {
     background-color: #1F2937;
+}
+
+.footer {
+    color: #E5E7EB;
 }
 
 .main-text  {
@@ -28,6 +32,7 @@ a {
 
 button, .call-to-action {
     background-color: #3882F6;
+    color: #E5E7EB;
 }
 
 .information    {
