@@ -1,15 +1,36 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+body{
+    margin: 0;
+}
+
 .hero, .footer, .header  {
     background-color: #1F2937;
 }
 
+.left, .right {
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: center;
+    width: 50vw;
+    padding: 16px;
+}
+
 .footer {
     color: #E5E7EB;
+    text-align: center;
 }
 
 .main-text  {
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
+    
 }
 
 .secondary-text, a {
@@ -17,8 +38,13 @@
     color: #E5E7EB;
 }
 
-li {
+ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 8px;
+    gap: 8px;
 }
 
 a {
@@ -28,6 +54,35 @@ a {
 .header {
     font-size: 24px;
     color: #F9FAF8;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero{
+    display:flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    flex: 1;
+    margin: 0;
+    padding: 125px;
+    gap: 24px;
+}
+
+.container-hero, .container-cta  {
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 50vw;
+}
+
+.image {
+    border: solid 5px darkgray;
+    height: 300px;
+    width: 50vw;
+    text-align: center;
 }
 
 button, .call-to-action {
@@ -35,10 +90,32 @@ button, .call-to-action {
     color: #E5E7EB;
 }
 
+button{
+    height: 25px;
+    width: 75px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+/* .call-to-action {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.container-info {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .information    {
     font-size: 36px;
     font-weight: 800;
-    color: #1F2937
+    color: #1F2937;
+    text-align: center;
+
 }
 
 .quote {
@@ -50,4 +127,9 @@ button, .call-to-action {
     font-weight: lighter;
     font-style: italic;
     color: #1F2937;
+    text-align: center;
+}
+
+.quote-author   {
+    text-align: right;
 }
