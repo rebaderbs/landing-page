@@ -3,7 +3,7 @@ body{
 }
 
 .hero, .footer, .header  {
-    background-color: #1F2937;
+    background-color: #00640088;
 }
 
 .left, .right {
@@ -29,7 +29,7 @@ body{
 }
 
 .secondary-text, a {
-    font-size: 18px;
+    font-size: 24px;
     color: #E5E7EB;
 }
 
@@ -39,7 +39,7 @@ ul {
     justify-content: center;
     margin: 0;
     padding: 8px;
-    gap: 24px;
+    gap: 36px;
 }
 
 a {
@@ -54,15 +54,18 @@ a {
     align-items: center;
 }
 
+.logo   {
+    max-height: 10vh;
+}
+
 .hero{
     display:flex;
     justify-content: left;
     align-items: left;
     text-align: left;
-    flex: 1;
     margin: 0;
-    padding: 125px;
-    gap: 24px;
+    padding: 150px;
+    gap: 75px;
 }
 
 .container-hero  {
@@ -70,40 +73,45 @@ a {
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    width: 50vw;
+    width: 60vw;
+    padding: 75px;
 }
 
 .image {
-    border: solid 5px darkgray;
-    height: 300px;
-    width: 50vw;
-    text-align: center;
+    height: auto;
+    width: 40vw;
+    /* width: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
 }
 
 button, .call-to-action {
-    background-color: #3882F6;
+    background-color: #012B09;
     color: #E5E7EB;
 }
 
 button{
-    height: 25px;
-    width: 75px;
+    height: 50px;
+    width: 125px;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
     margin-top: 25px;
+    font-size: large;
 }
 
 .container-info {
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 16px;
+    color: #012B09;
 }
 
 .information    {
     font-size: 36px;
     font-weight: 800;
-    color: #1F2937;
+    /* color: #1F2937; */
     text-align: center;
     padding: 25px;
 }
@@ -118,25 +126,30 @@ button{
 }
 
 .images {
-    height: 125px;
-    width: 125px;
-    border: 2px solid darkslategray;
+    height: 250px;
+    width: 250px;
+    border: 2px solid #012B09;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     border-radius: 15px;
-    margin-top: 25px;
+
 }
 
 .image-text {
     text-align: center;
+    font-size: larger;
+    color: #012B09;
 }
 
 .quote {
     background-color: #E5E7EB;
-    gap: 8px;
+    padding: 75px;
 }
 
 .quote-text {
     font-size: 36px;
-    font-weight: lighter;
+    font-weight: light;
     font-style: italic;
     color: #1F2937;
     text-align: center;
@@ -146,7 +159,8 @@ button{
 .quote-author   {
     text-align: right;
     padding: 75px;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size: 32px;
 }
 
 .call-to-action {
@@ -159,6 +173,7 @@ button{
     padding: 75px 125px;
     gap: 24px;
     margin: 75px 200px;
+    font-size: x-large;
 }
 
 .container-cta  {
@@ -167,7 +182,10 @@ button{
     justify-content: left;
     align-items: left;
     width: 50vw;
+}
 
+.cta-main   {
+    font-weight: bold;
 }
 
 .button {
@@ -176,6 +194,6 @@ button{
     justify-content: center;
 }
 
-.sign-up {
+.learn-more {
     border: 2px solid #E5E7EB;
 }
