@@ -77,8 +77,8 @@ a {
     padding: 75px;
 }
 
-.image {
-    height: auto;
+.image-main {
+    /* height: auto; */
     width: 40vw;
     /* width: 500px; */
     display: flex;
@@ -109,31 +109,25 @@ button{
 }
 
 .information    {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 36px;
     font-weight: 800;
-    /* color: #1F2937; */
-    text-align: center;
     padding: 25px;
 }
 
 .container-images   {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 25px;
     gap: 8px;
 }
 
 .images {
-    height: 250px;
-    width: 250px;
+    height: auto;
+    width: 350px;
     border: 2px solid #012B09;
-    display: flex;
-    justify-content: center;
-    align-content: center;
     border-radius: 15px;
-
 }
 
 .image-text {
